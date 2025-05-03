@@ -18,12 +18,14 @@ def get_reddit_forecast():
 
     for sub in subreddits:
         try:
-            for post in reddit.subreddit(sub).top(time_filter='week', limit=25):
+            for post in reddit.subreddit(sub).top(time_filter='month', limit=25): # changed from 'week' to 'month'
                 title = post.title
                 if any(keyword in title.lower() for keyword in keywords):
+                    print(f"✅ Matched in r/{sub}: {title}")
                     collected.append({
                         "title": title,
-                        "trend_type": "Trending Media",
+                        "subreddit": sub,  # ✅ Include where it came from
+                        "trend_type": "Entertainment Pulse",
                         "description": f"Redditors are actively discussing: {title[:100]}..."
                     })
             # ⬆️ No early break — we scan each subreddit completely now
@@ -35,7 +37,9 @@ def get_reddit_forecast():
         "media_forecast": collected,
         "meta": {
             "source": "Reddit API (PRAW)",
-            "verified": bool(collected)
+            "verified": bool(collected),
+            "subreddits_scanned": subreddits,
+            "total_matches": len(collected)  # ✅ helpful for diagnostics
         }
     }
 
