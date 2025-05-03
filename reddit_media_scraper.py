@@ -14,7 +14,7 @@ def get_reddit_forecast():
         try:
             res = requests.get(url, headers=headers, timeout=10)
             # ⬇️ ADD THIS LINE RIGHT BELOW
-            print(f"🔍 Raw response from r/{sub}: {res.text[:300]}")  # Add this
+            print(f"🔢 Status from r/{sub}: {res.status_code}")
                        
             posts = res.json().get("data", {}).get("children", [])
             for post in posts:
