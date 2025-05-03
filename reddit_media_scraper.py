@@ -19,9 +19,9 @@ def get_reddit_forecast():
     for sub in subreddits:
         matches = []
         try:
-            for post in reddit.subreddit(sub).top(time_filter='month', limit=25):
+            for post in reddit.subreddit(sub).top(time_filter='month', limit=50):
                 title = post.title
-                if any(keyword in title.lower() for keyword in keywords) and post.score >= 100:
+                if any(keyword in title.lower() for keyword in keywords) and post.score >= 80:
                     matches.append({
                         "title": title,
                         "subreddit": sub,
