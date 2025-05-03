@@ -1,0 +1,59 @@
+{
+  "timestamp": "05/03/2025 09:41:21",
+  "media_forecast": [
+    {
+      "title": "New Netflix season trailer drops tomorrow",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: New Netflix season trailer drops tomorrow..."
+    },
+    {
+      "title": "HBO confirms final episode air date",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: HBO confirms final episode air date..."
+    },
+    {
+      "title": "Placeholder Title 1",
+      "trend_type": "Trending Media",
+      "description": "This is a placeholder entry for forecast testing."
+    },
+    {
+      "title": "HBO confirms final episode air date",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: HBO confirms final episode air date..."
+    },
+    {
+      "title": "Placeholder Title 1",
+      "trend_type": "Trending Media",
+      "description": "This is a placeholder entry for forecast testing."
+    },
+    {
+      "title": "HBO confirms final episode air date",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: HBO confirms final episode air date..."
+    },
+    {
+      "title": "Placeholder Title 1",
+      "trend_type": "Trending Media",
+      "description": "This is a placeholder entry for forecast testing."
+    },
+    {
+      "title": "HBO confirms final episode air date",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: HBO confirms final episode air date..."
+    },
+    {
+      "title": "Placeholder Title 1",
+      "trend_type": "Trending Media",
+      "description": "This is a placeholder entry for forecast testing."
+    },
+    {
+      "title": "StreamingTV platform launches new original series",
+      "trend_type": "Trending Media",
+      "description": "Redditors are actively discussing: StreamingTV platform launches new original series..."
+    }
+  ],
+  "meta": {
+    "source": "Reddit API",
+    "verified": true
+  }
+}
