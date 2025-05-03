@@ -13,7 +13,7 @@ reddit = praw.Reddit(
 
 def get_reddit_forecast():
     subreddits = ['television', 'netflix', 'HBO', 'movies']
-    keywords = ["netflix", "amazon", "show", "season", "series", "movie"]
+    keywords = ["netflix", "amazon", "show", "season", "series", "poster", "announce", "episode", "reboot", "movie"]
     collected = []
 
     for sub in subreddits:
