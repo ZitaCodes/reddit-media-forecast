@@ -10,7 +10,7 @@ def get_reddit_forecast():
     collected = []
 
     for sub in subreddits:
-        url = f"https://www.reddit.com/r/{sub}/hot.json?limit=25"
+        url = f"https://www.reddit.com/r/{sub}/top.json?t=week&limit=25"
         try:
             res = requests.get(url, headers=headers, timeout=10)
             posts = res.json().get("data", {}).get("children", [])
