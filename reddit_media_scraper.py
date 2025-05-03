@@ -16,6 +16,7 @@ def get_reddit_forecast():
             # ⬇️ ADD THIS LINE RIGHT BELOW
             print(f"🛸 [{sub}] Status Code:", res.status_code)
             print("📦 RAW RESPONSE:", res.text[:500])
+            
             posts = res.json().get("data", {}).get("children", [])
             for post in posts:
                 data = post["data"]
