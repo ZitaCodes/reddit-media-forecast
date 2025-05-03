@@ -12,12 +12,6 @@ reddit = praw.Reddit(
 )
 
 def get_reddit_forecast():
-    reddit = praw.Reddit(
-        client_id=os.getenv("REDDIT_CLIENT_ID"),
-        client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
-        user_agent=os.getenv("REDDIT_USER_AGENT")
-    )
-
     subreddits = ['television', 'netflix', 'HBO', 'movies']
     keywords = ["netflix", "amazon", "show", "season", "series", "poster", "announce", "episode", "reboot", "movie"]
     collected = []
@@ -25,7 +19,8 @@ def get_reddit_forecast():
     for sub in subreddits:
         try:
             matches = []
-            for post in reddit.subreddit(sub).top(time_filter='week', limit=50):
+            posts = reddit.subreddit(sub).top(time_filter='week', limit=50)
+            for post in posts:
                 title = post.title
                 score = post.score or 0
                 if score >= 80 and any(keyword in title.lower() for keyword in keywords):
@@ -42,6 +37,11 @@ def get_reddit_forecast():
             collected.extend(matches)
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
+
+    # 🔎 Debug output of collected data
+    print(f"\n🧾 Total entries collected: {len(collected)}")
+    for i, item in enumerate(collected, 1):
+        print(f"{i}. [r/{item.get('subreddit')}] {item.get('title')} (score: {item.get('score')})")
 
     return {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     with open("media_forecast_output.json", "w") as f:
         json.dump(forecast, f, indent=2)
 
-    print("🔁 Starting auto-commit and push to GitHub...")
+    print("\n🔁 Starting auto-commit and push to GitHub...")
 
     try:
         subprocess.run(["git", "add", "media_forecast_output.json"])
