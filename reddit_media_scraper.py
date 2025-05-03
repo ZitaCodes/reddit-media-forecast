@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 import praw
 
-# Initialize Reddit API via env vars
+# Initialize Reddit API
 reddit = praw.Reddit(
     client_id=os.getenv("REDDIT_CLIENT_ID"),
     client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
@@ -29,12 +29,12 @@ def get_reddit_forecast():
                         "description": f"Redditors are actively discussing: {title[:100]}..."
                     })
                 if len(matches) >= 3:
-                    break  # Stop at 3 top posts per subreddit
+                    break
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
         
         print(f"📊 r/{sub}: scanned 25, matched {len(matches)}")
-        collected.extend(matches)
+        collected.extend(matches)  # ✅ THIS LINE FIXES THE ISSUE
 
     return {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
