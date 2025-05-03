@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 import praw
 
-# Initialize Reddit API with environment variables
+# Initialize Reddit API via env vars
 reddit = praw.Reddit(
     client_id=os.getenv("REDDIT_CLIENT_ID"),
     client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
@@ -28,11 +28,12 @@ def get_reddit_forecast():
                         "trend_type": "Entertainment Pulse",
                         "description": f"Redditors are actively discussing: {title[:100]}..."
                     })
-                if len(matches) >= 3:  # Only take top 3 per subreddit
-                    break
+                if len(matches) >= 3:
+                    break  # Stop at 3 top posts per subreddit
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
         
+        print(f"📊 r/{sub}: scanned 25, matched {len(matches)}")
         collected.extend(matches)
 
     return {
@@ -45,7 +46,6 @@ def get_reddit_forecast():
             "total_matches": len(collected)
         }
     }
-
 
 if __name__ == "__main__":
     forecast = get_reddit_forecast()
