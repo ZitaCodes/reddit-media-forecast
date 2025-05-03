@@ -13,20 +13,20 @@ reddit = praw.Reddit(
 
 def get_reddit_forecast():
     subreddits = ['television', 'netflix', 'HBO', 'movies']
+    keywords = ["netflix", "amazon", "show", "season", "series", "movie"]
     collected = []
 
     for sub in subreddits:
         try:
             for post in reddit.subreddit(sub).top(time_filter='week', limit=25):
                 title = post.title
-                if any(keyword in title.lower() for keyword in ["netflix", "season", "trailer", "episode", "series", "premiere"]):
+                if any(keyword in title.lower() for keyword in keywords):
                     collected.append({
                         "title": title,
                         "trend_type": "Trending Media",
                         "description": f"Redditors are actively discussing: {title[:100]}..."
                     })
-                if len(collected) >= 10:
-                    break
+            # ⬆️ No early break — we scan each subreddit completely now
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
 
