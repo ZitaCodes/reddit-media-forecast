@@ -13,6 +13,8 @@ def get_reddit_forecast():
         url = f"https://www.reddit.com/r/{sub}/top.json?t=week&limit=25"
         try:
             res = requests.get(url, headers=headers, timeout=10)
+            # ⬇️ ADD THIS LINE RIGHT BELOW
+            print("📦 RAW RESPONSE:", res.text[:500])
             posts = res.json().get("data", {}).get("children", [])
             for post in posts:
                 data = post["data"]
