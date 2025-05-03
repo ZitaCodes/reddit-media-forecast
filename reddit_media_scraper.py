@@ -12,29 +12,36 @@ reddit = praw.Reddit(
 )
 
 def get_reddit_forecast():
+    reddit = praw.Reddit(
+        client_id=os.getenv("REDDIT_CLIENT_ID"),
+        client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
+        user_agent=os.getenv("REDDIT_USER_AGENT")
+    )
+
     subreddits = ['television', 'netflix', 'HBO', 'movies']
     keywords = ["netflix", "amazon", "show", "season", "series", "poster", "announce", "episode", "reboot", "movie"]
     collected = []
 
     for sub in subreddits:
-        matches = []
         try:
-            for post in reddit.subreddit(sub).top(time_filter='month', limit=50):
+            matches = []
+            for post in reddit.subreddit(sub).top(time_filter='week', limit=50):
                 title = post.title
-                if any(keyword in title.lower() for keyword in keywords) and post.score >= 80:
+                score = post.score or 0
+                if score >= 80 and any(keyword in title.lower() for keyword in keywords):
                     matches.append({
                         "title": title,
-                        "subreddit": sub,
                         "trend_type": "Entertainment Pulse",
-                        "description": f"Redditors are actively discussing: {title[:100]}..."
+                        "description": f"Redditors are actively discussing: {title[:100]}...",
+                        "subreddit": sub,
+                        "score": score
                     })
-                if len(matches) >= 3:
-                    break
+                    if len(matches) >= 3:
+                        break
+            print(f"📊 r/{sub}: scanned 50, matched {len(matches)}")
+            collected.extend(matches)
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
-        
-        print(f"📊 r/{sub}: scanned 50, matched {len(matches)}")
-        collected.extend(matches)  # ✅ THIS LINE FIXES THE ISSUE
 
     return {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
