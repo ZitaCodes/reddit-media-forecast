@@ -17,20 +17,23 @@ def get_reddit_forecast():
     collected = []
 
     for sub in subreddits:
+        matches = []
         try:
-            for post in reddit.subreddit(sub).top(time_filter='month', limit=25): # changed from 'week' to 'month'
+            for post in reddit.subreddit(sub).top(time_filter='month', limit=25):
                 title = post.title
-                if any(keyword in title.lower() for keyword in keywords):
-                    print(f"✅ Matched in r/{sub}: {title}")
-                    collected.append({
+                if any(keyword in title.lower() for keyword in keywords) and post.score >= 100:
+                    matches.append({
                         "title": title,
-                        "subreddit": sub,  # ✅ Include where it came from
+                        "subreddit": sub,
                         "trend_type": "Entertainment Pulse",
                         "description": f"Redditors are actively discussing: {title[:100]}..."
                     })
-            # ⬆️ No early break — we scan each subreddit completely now
+                if len(matches) >= 3:  # Only take top 3 per subreddit
+                    break
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
+        
+        collected.extend(matches)
 
     return {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
@@ -39,9 +42,10 @@ def get_reddit_forecast():
             "source": "Reddit API (PRAW)",
             "verified": bool(collected),
             "subreddits_scanned": subreddits,
-            "total_matches": len(collected)  # ✅ helpful for diagnostics
+            "total_matches": len(collected)
         }
     }
+
 
 if __name__ == "__main__":
     forecast = get_reddit_forecast()
