@@ -5,7 +5,7 @@ import os
 import requests
 
 def get_reddit_forecast():
-    headers = {'User-Agent': 'ForecastBot/1.0'}
+    headers = {'User-Agent': 'Mozilla/5.0 (compatible; ForecastBot/1.0; +http://cloutbooks.com/contact)'}
     subreddits = ['television', 'netflix', 'HBO', 'movies', 'StreamingTV']
     collected = []
 
