@@ -2,24 +2,23 @@ import subprocess
 import json
 from datetime import datetime
 import os
-import requests
+import praw
+
+# Initialize Reddit API with environment variables
+reddit = praw.Reddit(
+    client_id=os.getenv("REDDIT_CLIENT_ID"),
+    client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
+    user_agent=os.getenv("REDDIT_USER_AGENT")
+)
 
 def get_reddit_forecast():
-    headers = {'User-Agent': 'Mozilla/5.0 (compatible; ForecastBot/1.0; +http://cloutbooks.com/contact)'}
     subreddits = ['television', 'netflix', 'HBO', 'movies', 'StreamingTV']
     collected = []
 
     for sub in subreddits:
-        url = f"https://www.reddit.com/r/{sub}/top.json?t=week&limit=25"
         try:
-            res = requests.get(url, headers=headers, timeout=10)
-            # ⬇️ ADD THIS LINE RIGHT BELOW
-            print(f"🔢 Status from r/{sub}: {res.status_code}")
-                       
-            posts = res.json().get("data", {}).get("children", [])
-            for post in posts:
-                data = post["data"]
-                title = data.get("title", "")
+            for post in reddit.subreddit(sub).top(time_filter='week', limit=25):
+                title = post.title
                 if any(keyword in title.lower() for keyword in ["netflix", "season", "trailer", "episode", "series", "premiere"]):
                     collected.append({
                         "title": title,
@@ -35,7 +34,7 @@ def get_reddit_forecast():
         "timestamp": datetime.now().isoformat(timespec="seconds"),
         "media_forecast": collected,
         "meta": {
-            "source": "Reddit API",
+            "source": "Reddit API (PRAW)",
             "verified": bool(collected)
         }
     }
@@ -46,11 +45,11 @@ if __name__ == "__main__":
     with open("media_forecast_output.json", "w") as f:
         json.dump(forecast, f, indent=2)
 
-print("🔁 Starting auto-commit and push to GitHub...")
+    print("🔁 Starting auto-commit and push to GitHub...")
 
-try:
-    subprocess.run(["git", "add", "media_forecast_output.json"])
-    subprocess.run(["git", "commit", "-m", "📡 Auto-push: updated forecast data"], check=False)
-    subprocess.run(["git", "push"])
-except Exception as e:
-    print("❌ Git push failed:", e)
+    try:
+        subprocess.run(["git", "add", "media_forecast_output.json"])
+        subprocess.run(["git", "commit", "-m", "📡 Auto-push: updated forecast data"], check=False)
+        subprocess.run(["git", "push"])
+    except Exception as e:
+        print("❌ Git push failed:", e)
