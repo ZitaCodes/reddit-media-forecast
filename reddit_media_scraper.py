@@ -33,7 +33,7 @@ def get_reddit_forecast():
         except Exception as e:
             print(f"⚠️ Error fetching from r/{sub}: {e}")
         
-        print(f"📊 r/{sub}: scanned 25, matched {len(matches)}")
+        print(f"📊 r/{sub}: scanned 50, matched {len(matches)}")
         collected.extend(matches)  # ✅ THIS LINE FIXES THE ISSUE
 
     return {
