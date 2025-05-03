@@ -68,6 +68,13 @@ def root():
         return send_file(OUTPUT_FILE, mimetype="application/json")
     return jsonify({"status": "No media forecast data available."}), 404
 
+@app.route('/media_forecast_output.json')
+def serve_forecast():
+    if os.path.exists(OUTPUT_FILE):
+        return send_file(OUTPUT_FILE, mimetype='application/json')
+    else:
+        return jsonify({"status": "No media forecast data available."}), 404
+
 
 if __name__ == "__main__":
     get_reddit_forecast()
