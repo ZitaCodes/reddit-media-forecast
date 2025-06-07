@@ -40,7 +40,7 @@ def get_reddit_forecast():
 
     return {
         "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "media_forecast": collected,
+        "media_forecast": sorted(collected, key=lambda x: x["score"], reverse=True),
         "meta": {
             "source": "Reddit API (PRAW)",
             "verified": bool(collected),
