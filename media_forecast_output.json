@@ -1,59 +1,60 @@
 {
-  "timestamp": "06/06/2025 22:37:21",
-  "media_forecast": [
+  "last_updated": "07-01-2025",
+  "reddit_forecast": [
     {
-      "title": "Sequels That Sucked!",
-      "description": "What movie sequel ruined the ending of its predecessor? Kingsman: The Golden Circle, Men in Black 2, Pacific Rim 2, The Rambo sequels, Anything After Terminator 2, Rise of Skywalker.",
-      "score": 9192
+      "title": "The Naked Gun (New Poster)",
+      "trend_type": "Comedy Reboot",
+      "description": "Redditors exploded over the new poster \u2014 perfect to lean into absurdist humor or quirky detective stories.  \ud83d\udcca Score: 89271"
     },
     {
-      "title": "Ads in the Movie Theaters",
-      "description": "AMC to show even more ads in its theaters before the actual movie. [Don't let your book take too long to reel in the reader.]",
-      "score": 4693
+      "title": "Project Hail Mary (Ryan Gosling)",
+      "trend_type": "Sci-Fi Hero Drama",
+      "description": "Poster reveal hyped Reddit \u2014 use for lone savior arcs, genius under pressure, or near-death stakes.  \ud83d\udcca Score: 19861"
     },
     {
-      "title": "Luc Besson's 'Dracula'",
-      "description": "Official Poster for Luc Besson's 'Dracula' Starring Caleb Landry Jones, Christoph Waltz & Zoë Bleu [stirring up new interest in the vampire trope].",
-      "score": 4686
+      "title": "The Odyssey (Christopher Nolan)",
+      "trend_type": "Epic Myth Retelling",
+      "description": "Fans are buzzing over Nolan\u2019s take \u2014 ideal for epic journeys, tortured heroes, or modern mythological twists.  \ud83d\udcca Score: 17870"
     },
     {
-      "title": "Andor",
-      "description": "Sets Third Consecutive Series High On Nielsen Streaming Charts (830 Million Minutes Viewed); ‘The Four Seasons’ Takes No. 1.",
-      "score": 3041
+      "title": "I'm Glad My Mom Died (Apple TV+)",
+      "trend_type": "Memoir Adaptation",
+      "description": "Aniston's casting has Reddit hooked \u2014 great for trauma recovery arcs or messy mother-daughter dynamics.  \ud83d\udcca Score: 8484"
     },
     {
-      "title": "DAN DA DAN",
-      "description": "Season 1 Was America's Most Watched Anime Series For 18 to 49 Year Olds, Says Nielsen Data - Anime Corner.",
-      "score": 3028
+      "title": "The Office (Post-Steve Carell)",
+      "trend_type": "Nostalgia + Cast Change Drama",
+      "description": "Waves of Reddit sentiment \u2014 can inspire books about band breakups, leadership shifts, or workplace found family.  \ud83d\udcca Score: 5650"
     },
     {
-      "title": "Andor Season 2 Production",
-      "description": "During the Production of Season 2 of 'Andor' Tony Gilroy was told by Disney Execs that \"Streaming Is Dead. We Don’t Have the Money We Had Before. So focus on movies instead?\"",
-      "score": 2842
+      "title": "The Last of Us (Creative Shakeup)",
+      "trend_type": "Fandom Unrest",
+      "description": "Reddit debate is fierce \u2014 tap into betrayal themes, lost vision arcs, or crumbling alliances.  \ud83d\udcca Score: 4387"
     },
     {
-      "title": "Dept Q",
-      "description": "Dept Q should be renewed for season 2",
-      "score": 222
+      "title": "Netflix Hidden Gems",
+      "trend_type": "Underwatched Gold",
+      "description": "Reddit wants to amplify sleeper hits \u2014 position your book as 'the one no one knows but everyone should read.'  \ud83d\udcca Score: 1889"
     },
     {
-      "title": "Damon Lindelof Admits",
-      "description": "'The Leftovers' Wasn't Accessible For Everyone; “The First Season, in Many Ways, is like, ‘Stop F---ing Watching!’",
-      "score": 218
+      "title": "Netflix Cancels Everything",
+      "trend_type": "Platform Fatigue",
+      "description": "Frustration is real \u2014 authors can lean into 'limited-time worlds' or emotionally abrupt endings.  \ud83d\udcca Score: 514"
     },
     {
-      "title": "Adolescence Beats Stranger Things 4",
-      "description": "Adolescence to Become Netflix’s No. 2 Most-Watched English-Language Series Ever.",
-      "score": 173
+      "title": "Netflix Games Criticism",
+      "trend_type": "Audience Disconnect",
+      "description": "The pushback on Netflix games is growing \u2014 could fuel plots about corporate overreach or tech fatigue.  \ud83d\udcca Score: 507"
     },
     {
-      "title": "Plots with Shock Factor Still Wanted",
-      "description": "<i> I want</i> A Show That’s Going To Have Me Gagged and Shocked.",
-      "score": 165
+      "title": "The Comeback (HBO Revival)",
+      "trend_type": "Second Chance Series",
+      "description": "A beloved show returns \u2014 use for arcs about reinvention, long-lost love, or proving you still got it.  \ud83d\udcca Score: 156"
+    },
+    {
+      "title": "Ranking HBO Hits",
+      "trend_type": "Prestige Reflection",
+      "description": "Reddit's love for HBO\u2019s lineup sparks reflection \u2014 play off 'top-tier stories' or legacy comparisons.  \ud83d\udcca Score: 88"
     }
-  ],
-  "meta": {
-    "source": "Reddit API",
-    "verified": true
-  }
+  ]
 }
