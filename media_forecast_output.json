@@ -1,55 +1,55 @@
 {
-  "last_updated": "07-13-2025",
+  "last_updated": "07-20-2025",
   "reddit_forecast": [
     {
-      "title": "The Naked Gun (Liam Neeson Poster)",
+      "title": "SOVEREIGN (Nick Offerman AMA)",
+      "trend_type": "American Crime Thriller",
+      "description": "Reddit blew up for Nick Offerman’s AMA about SOVEREIGN — great comp for gritty thrillers, vigilante arcs, or father-figure redemption. 📊 Score: 48058"
+    },
+    {
+      "title": "Supergirl (Teaser Poster)",
+      "trend_type": "Action Drama Reboot",
+      "description": "Buzz around the first look — perfect for reimagined heroines, outsider strength arcs, or sci-fi coming-of-age. 📊 Score: 20658"
+    },
+    {
+      "title": "The Naked Gun (New Poster)",
       "trend_type": "Comedy Reboot",
-      "description": "A bold new poster starring Liam Neeson has Reddit buzzing — great for leaning into absurdist crime spoofs or serious guy in a funny world tropes. 📈 Score: 34779"
+      "description": "Still charting — Reddit loves this Liam Neeson update. Lean into absurdist humor, deadpan mystery tropes, or nostalgic crime parodies. 📊 Score: 15436"
     },
     {
-      "title": "Honey Don’t (Ethan Coen)",
-      "trend_type": "Queer Detective Noir",
-      "description": "A lesbian PI investigates a shady church — ideal for gritty solo arcs, queer noir, or mystery with moral rot. 📈 Score: 14881"
+      "title": "Honey Don't (Poster)",
+      "trend_type": "Queer Crime Noir",
+      "description": "Strong second week for this quirky detective concept — great for sapphic sleuths, small-town corruption, or religious mystery themes. 📊 Score: 14881"
     },
     {
-      "title": "WEAPONS (New Horror Poster)",
-      "trend_type": "Mystery Horror Tease",
-      "description": "Poster drop fuels hype — authors can echo this with eerie setups, symbolic violence, or slow-reveal horror. 📈 Score: 12115"
+      "title": "Colbert Show Losses (CBS Report)",
+      "trend_type": "Talk Show Turmoil",
+      "description": "CBS’s losses stir conversation — ideal for books about public burnout, satire fatigue, or pivoting careers. 📊 Score: 12658"
     },
     {
-      "title": "It’s Always Sunny S18 (Danny DeVito)",
-      "trend_type": "Enduring Ensemble Comedy",
-      "description": "Fans are thrilled DeVito's back — great for chaotic loyalty, aging pranksters, or unstoppable found family vibes. 📈 Score: 5237"
+      "title": "The Late Show Ends (CBS Statement)",
+      "trend_type": "Franchise Farewell",
+      "description": "A late-night era ends — authors can explore end-of-legacy arcs, aging out of fame, or network shakeups. 📊 Score: 12381"
     },
     {
-      "title": "Scrubs Reboot (ABC Series Order)",
-      "trend_type": "Medical Nostalgia Revival",
-      "description": "A new generation meets the old cast — authors can riff on mentor/rookie tension or workplace heart+humor. 📈 Score: 4203"
+      "title": "WEAPONS (Mystery Horror Film)",
+      "trend_type": "Psychological Mystery Horror",
+      "description": "Still rising on Reddit — great for paranoia thrillers, twisted timelines, or deadly secrets in plain sight. 📊 Score: 12115"
     },
     {
-      "title": "Murderbot Season 2 (Apple TV+)",
-      "trend_type": "AI with Emotions",
-      "description": "Renewal delights sci-fi fans — try introspective androids, social awkwardness, or reluctant protectors. 📈 Score: 3724"
+      "title": "Alias Grace (Hidden Gem)",
+      "trend_type": "Historical Murder Mystery",
+      "description": "Two Redditors recommended this Canadian series — great for subtle suspense, unreliable narration, or period feminist stories. 📊 Score: 446"
     },
     {
-      "title": "Netflix Cancels The Residence",
-      "trend_type": "Platform Shakeup",
-      "description": "Another sudden drop stirs frustration — authors might mirror this with emotional cliffhangers or abrupt chaos. 📈 Score: 424"
+      "title": "Netflix Feels Empty",
+      "trend_type": "Platform Burnout",
+      "description": "Reddit fatigue is high — could inspire dystopian themes, broken expectations, or media dependency plots. 📊 Score: 417"
     },
     {
-      "title": "Squid Game S3 Record Numbers",
-      "trend_type": "Survival Thriller Fatigue or Hype",
-      "description": "106M views proves the genre still grips — echo with moral panic, games-as-justice, or fame fallout themes. 📈 Score: 321"
-    },
-    {
-      "title": "Larry David Sketch Series (HBO)",
-      "trend_type": "Veteran Comedy Bet",
-      "description": "Reddit welcomes the cranky genius back — authors could channel 'grumpy prophet' energy or satirical edge. 📈 Score: 133"
-    },
-    {
-      "title": "Duster Canceled (HBO)",
-      "trend_type": "Period Crime Dropout",
-      "description": "A one-season wonder ends — sparks nostalgia for desert noir, dusty danger, or bootleg legacy arcs. 📈 Score: 94"
+      "title": "Netflix Trainwreck Documentary Requests",
+      "trend_type": "Documentary Wishlist",
+      "description": "Users hope for future exposés — good for messy real-life adaptations, docudrama plots, or social unraveling. 📊 Score: 262"
     }
   ]
 }
