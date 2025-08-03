@@ -1,114 +1,60 @@
 {
-  "last_updated": "2025-08-03",
-  "fan_buzzed": [
+  "last_updated": "08-03-2025",
+  "reddit_forecast": [
     {
-      "title": "Happy Gilmore 2",
-      "source": "r/movies",
-      "description": "Adam Sandler\u2019s sequel becomes Netflix\u2019s biggest U.S. film opening ever with 46.7M views.",
-      "score": 31270
+      "title": "Happy Gilmore 2 (Adam Sandler)",
+      "trend_type": "Comedy Sequel",
+      "description": "Shattered Netflix records — perfect to ride sports nostalgia, slapstick comeback arcs, or Gen Z discovering Gen X. 📊 Score: 31270"
     },
     {
-      "title": "South Park Season 27 Premiere",
-      "source": "r/television",
-      "description": "5.9 million viewers tune in for Trump-mocking premiere.",
-      "score": 20249
+      "title": "South Park (Trump-Mocking Premiere)",
+      "trend_type": "Satirical TV Event",
+      "description": "Triggered political buzz — great for chaotic dystopias, controversial satire, or unlikely alliances. 📊 Score: 20249"
     },
     {
-      "title": "Supergirl",
-      "source": "r/movies",
-      "description": "Official teaser poster released for upcoming DC film.",
-      "score": 20658
+      "title": "South Park (Trump & Satan Episode)",
+      "trend_type": "Cult Chaos Anticipation",
+      "description": "Returning madness teased — leverage for infernal comedy, apocalypse comedy, or crass-meets-clever tones. 📊 Score: 15692"
     },
     {
-      "title": "South Park - Aug 6 Episode Tease",
-      "source": "r/television",
-      "description": "Trump and Satan confirmed for upcoming episode.",
-      "score": 15692
+      "title": "Stephen Colbert Ratings Spike",
+      "trend_type": "Media Swan Song",
+      "description": "Exit buzz exploded — mirror for final tour arcs, industry reckonings, or legacy vs relevance. 📊 Score: 15444"
     },
     {
-      "title": "The Late Show Breaks Records",
-      "source": "r/television",
-      "description": "Stephen Colbert's show sets post-cancellation ratings record.",
-      "score": 15444
+      "title": "Honey Don’t (Private Detective Film)",
+      "trend_type": "Queer Mystery Noir",
+      "description": "Detective + cult intrigue — cross-promote dark mysteries, sapphic thrillers, or antihero investigations. 📊 Score: 14881"
     },
     {
-      "title": "Honey Don't",
-      "source": "r/movies",
-      "description": "Poster drops for Ethan Coen's new detective film.",
-      "score": 14881
+      "title": "Good Fortune (Keanu Reeves)",
+      "trend_type": "Star-Driven Whimsy",
+      "description": "Poster reveal gained traction — use for rom-com redemptions, spiritual awakenings, or midlife joyrides. 📊 Score: 8621"
     },
     {
       "title": "K-Pop Demon Hunters",
-      "source": "r/movies",
-      "description": "Becomes Netflix\u2019s most watched animated movie ever.",
-      "score": 10073
+      "trend_type": "Cultural Fusion Animation",
+      "description": "Hit new milestone — great for supernatural squads, idol drama blends, or found-family magic. 📊 Score: 10073"
     },
     {
-      "title": "The Naked Gun (Starring Liam Neeson)",
-      "source": "r/movies",
-      "description": "New poster unveiled for reboot of crime-comedy classic.",
-      "score": 34779
-    },
-    {
-      "title": "Good Fortune (2025)",
-      "source": "r/movies",
-      "description": "Keanu Reeves stars in mysterious upcoming comedy.",
-      "score": 8621
+      "title": "Netflix Hidden Gems",
+      "trend_type": "Unexpected Love",
+      "description": "Viewers rallied behind underdog titles — position your book as a 'best-kept secret' worth discovering. 📊 Score: 634"
     },
     {
       "title": "Untamed Season 2",
-      "source": "r/netflix",
-      "description": "Netflix officially renews romantic fantasy drama.",
-      "score": 545
-    }
-  ],
-  "hollywood_news": [
-    {
-      "title": "Deadpool & Wolverine",
-      "description": "Biggest release of summer with sharp, R-rated energy. Industry expects continued momentum in adult superhero films.",
-      "genre": "Superhero, Action, Comedy"
+      "trend_type": "Dramatic Renewal",
+      "description": "Renewal praise rising — lean into sprawling romance, loyalty vs betrayal arcs, or costume drama worldbuilding. 📊 Score: 545"
     },
     {
-      "title": "Joker: Folie \u00e0 Deux",
-      "description": "Anticipated to redefine musical noir, with Lady Gaga as Harley Quinn.",
-      "genre": "Psychological, Musical, Crime"
+      "title": "Bad Influence Season 2",
+      "trend_type": "Toxic Friendship Sequel",
+      "description": "Controversial return — great fit for manipulative exes, influencer culture crashes, or twisted sisterhoods. 📊 Score: 345"
     },
     {
-      "title": "Beetlejuice Beetlejuice",
-      "description": "Tim Burton's sequel expected to revive spooky-comedy trend in Hollywood.",
-      "genre": "Horror Comedy, Fantasy"
-    }
-  ],
-  "reel_watch": [
-    {
-      "title": "The Women",
-      "status": "\ud83e\udde9 Post-production",
-      "release_date": "2025-09-15",
-      "genre": "Drama",
-      "note": "If your book tackles female friendship, resilience, or betrayal, consider syncing your promo mid-September."
-    },
-    {
-      "title": "Afterworld",
-      "status": "\ud83c\udfa5 Production",
-      "release_date": "2025-10-01",
-      "genre": "Sci-Fi, Thriller",
-      "note": "Great match for futuristic survival tropes or AI-human themes."
-    }
-  ],
-  "future_flicks": [
-    {
-      "title": "Kingdom Fall",
-      "status": "\ud83d\udfe2 Pre-production",
-      "release_year": 2026,
-      "genre": "Fantasy, War, Romance",
-      "note": "Perfect for epic fantasy authors building a long-game campaign."
-    },
-    {
-      "title": "Avatar 5",
-      "status": "\ud83d\udef8 Future Flick",
-      "release_year": 2031,
-      "genre": "Sci-Fi, Environmental",
-      "note": "Authors with planetary romance or eco-driven plots should prep long-tail promo."
+      "title": "HBO Holy Trinity",
+      "trend_type": "Audience Loyalty",
+      "description": "Fans listed must-watch classics — echo with themes of elite storytelling, intense emotion, or genre mastery. 📊 Score: 413"
     }
   ]
 }
