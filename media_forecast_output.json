@@ -1,55 +1,114 @@
 {
-  "last_updated": "07-27-2025",
-  "reddit_forecast": [
+  "last_updated": "2025-08-03",
+  "fan_buzzed": [
     {
-      "title": "SOVEREIGN (Nick Offerman AMA)",
-      "trend_type": "American Crime Thriller",
-      "description": "Reddit blew up for Nick Offerman’s AMA about SOVEREIGN — great comp for gritty thrillers, vigilante arcs, or father-figure redemption. 📊 Score: 48058"
+      "title": "Happy Gilmore 2",
+      "source": "r/movies",
+      "description": "Adam Sandler\u2019s sequel becomes Netflix\u2019s biggest U.S. film opening ever with 46.7M views.",
+      "score": 31270
     },
     {
-      "title": "Supergirl (Teaser Poster)",
-      "trend_type": "Action Drama Reboot",
-      "description": "Buzz around the first look — perfect for reimagined heroines, outsider strength arcs, or sci-fi coming-of-age. 📊 Score: 20658"
+      "title": "South Park Season 27 Premiere",
+      "source": "r/television",
+      "description": "5.9 million viewers tune in for Trump-mocking premiere.",
+      "score": 20249
     },
     {
-      "title": "The Naked Gun (New Poster)",
-      "trend_type": "Comedy Reboot",
-      "description": "Still charting — Reddit loves this Liam Neeson update. Lean into absurdist humor, deadpan mystery tropes, or nostalgic crime parodies. 📊 Score: 15436"
+      "title": "Supergirl",
+      "source": "r/movies",
+      "description": "Official teaser poster released for upcoming DC film.",
+      "score": 20658
     },
     {
-      "title": "Honey Don't (Poster)",
-      "trend_type": "Queer Crime Noir",
-      "description": "Strong second week for this quirky detective concept — great for sapphic sleuths, small-town corruption, or religious mystery themes. 📊 Score: 14881"
+      "title": "South Park - Aug 6 Episode Tease",
+      "source": "r/television",
+      "description": "Trump and Satan confirmed for upcoming episode.",
+      "score": 15692
     },
     {
-      "title": "Colbert Show Losses (CBS Report)",
-      "trend_type": "Talk Show Turmoil",
-      "description": "CBS’s losses stir conversation — ideal for books about public burnout, satire fatigue, or pivoting careers. 📊 Score: 12658"
+      "title": "The Late Show Breaks Records",
+      "source": "r/television",
+      "description": "Stephen Colbert's show sets post-cancellation ratings record.",
+      "score": 15444
     },
     {
-      "title": "The Late Show Ends (CBS Statement)",
-      "trend_type": "Franchise Farewell",
-      "description": "A late-night era ends — authors can explore end-of-legacy arcs, aging out of fame, or network shakeups. 📊 Score: 12381"
+      "title": "Honey Don't",
+      "source": "r/movies",
+      "description": "Poster drops for Ethan Coen's new detective film.",
+      "score": 14881
     },
     {
-      "title": "WEAPONS (Mystery Horror Film)",
-      "trend_type": "Psychological Mystery Horror",
-      "description": "Still rising on Reddit — great for paranoia thrillers, twisted timelines, or deadly secrets in plain sight. 📊 Score: 12115"
+      "title": "K-Pop Demon Hunters",
+      "source": "r/movies",
+      "description": "Becomes Netflix\u2019s most watched animated movie ever.",
+      "score": 10073
     },
     {
-      "title": "Alias Grace (Hidden Gem)",
-      "trend_type": "Historical Murder Mystery",
-      "description": "Two Redditors recommended this Canadian series — great for subtle suspense, unreliable narration, or period feminist stories. 📊 Score: 446"
+      "title": "The Naked Gun (Starring Liam Neeson)",
+      "source": "r/movies",
+      "description": "New poster unveiled for reboot of crime-comedy classic.",
+      "score": 34779
     },
     {
-      "title": "Netflix Feels Empty",
-      "trend_type": "Platform Burnout",
-      "description": "Reddit fatigue is high — could inspire dystopian themes, broken expectations, or media dependency plots. 📊 Score: 417"
+      "title": "Good Fortune (2025)",
+      "source": "r/movies",
+      "description": "Keanu Reeves stars in mysterious upcoming comedy.",
+      "score": 8621
     },
     {
-      "title": "Netflix Trainwreck Documentary Requests",
-      "trend_type": "Documentary Wishlist",
-      "description": "Users hope for future exposés — good for messy real-life adaptations, docudrama plots, or social unraveling. 📊 Score: 262"
+      "title": "Untamed Season 2",
+      "source": "r/netflix",
+      "description": "Netflix officially renews romantic fantasy drama.",
+      "score": 545
+    }
+  ],
+  "hollywood_news": [
+    {
+      "title": "Deadpool & Wolverine",
+      "description": "Biggest release of summer with sharp, R-rated energy. Industry expects continued momentum in adult superhero films.",
+      "genre": "Superhero, Action, Comedy"
+    },
+    {
+      "title": "Joker: Folie \u00e0 Deux",
+      "description": "Anticipated to redefine musical noir, with Lady Gaga as Harley Quinn.",
+      "genre": "Psychological, Musical, Crime"
+    },
+    {
+      "title": "Beetlejuice Beetlejuice",
+      "description": "Tim Burton's sequel expected to revive spooky-comedy trend in Hollywood.",
+      "genre": "Horror Comedy, Fantasy"
+    }
+  ],
+  "reel_watch": [
+    {
+      "title": "The Women",
+      "status": "\ud83e\udde9 Post-production",
+      "release_date": "2025-09-15",
+      "genre": "Drama",
+      "note": "If your book tackles female friendship, resilience, or betrayal, consider syncing your promo mid-September."
+    },
+    {
+      "title": "Afterworld",
+      "status": "\ud83c\udfa5 Production",
+      "release_date": "2025-10-01",
+      "genre": "Sci-Fi, Thriller",
+      "note": "Great match for futuristic survival tropes or AI-human themes."
+    }
+  ],
+  "future_flicks": [
+    {
+      "title": "Kingdom Fall",
+      "status": "\ud83d\udfe2 Pre-production",
+      "release_year": 2026,
+      "genre": "Fantasy, War, Romance",
+      "note": "Perfect for epic fantasy authors building a long-game campaign."
+    },
+    {
+      "title": "Avatar 5",
+      "status": "\ud83d\udef8 Future Flick",
+      "release_year": 2031,
+      "genre": "Sci-Fi, Environmental",
+      "note": "Authors with planetary romance or eco-driven plots should prep long-tail promo."
     }
   ]
 }
